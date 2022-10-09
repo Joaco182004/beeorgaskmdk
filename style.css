@@ -1,0 +1,641 @@
+@font-face {
+    font-family: SofiaPro;
+    src: url('./Fonts/SofiaProLight.ttf');
+}
+@font-face {
+    font-family: Lustria;
+    src: url('./Fonts/Lustria-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SofiaPro', serif;
+    overflow-x: hidden;
+}
+/*navbar*/
+.nav-bar-container{
+    width: 100vw;
+    height: 90px;
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr 0.25fr;
+    align-items: center;
+    overflow-y: hidden;
+   
+    background-color: #EBD481;
+}
+.nav-bar-container div{
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 80px;
+    margin-left: 1rem;
+}
+.searching{
+    width: 400px !important;
+    height: 40px;
+    background-color: white;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+ 
+    margin-left: 1rem;
+    padding-left: 20px;
+}
+.searching input{
+    width: 89%; 
+    outline: none;
+
+    border: none;
+  
+}
+.searching img{
+    width: 30px;
+    cursor: pointer;
+    
+}
+.labeling ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.labeling li{
+    margin: 3rem;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.btn-content{
+    display: flex;
+    height: 70%;
+    justify-content: left;
+    border-left: 2px solid black   ;
+}
+.btn-content button{
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 2rem;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+/*presentacion*/
+.presentation{
+    width: 100vw;
+    height: calc(100vh - 90px);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('./images/fondo_presentacion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+}
+.name{
+    width: 40vw;
+    color:white;
+    height: 80%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-right: 5px solid white;
+    border-radius: 0.15rem;
+}
+.text-title{
+    text-align: center;
+    font-size: 5rem;
+    margin: 1rem;
+    font-weight: bold;
+}
+.descripcion-slogan h2{
+    font-size: 4rem;
+    font-family: 'Lustria';
+    color: white;
+    margin: 2rem;
+}
+.descripcion-slogan h3{
+    font-family: 'Lexend Tera', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    margin: 2rem;
+}
+.descripcion-slogan b{
+    font-family: 'Lexend Tera', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #EBD481;
+}
+.descripcion-slogan button{
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem;
+    background-color: white;
+    box-shadow: 8px 8px #EBD481;
+    cursor: pointer;
+}
+/*sobre nosotros*/
+.sobre-nosotros{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.encabezado{
+    width: 100vw;
+    height: 60vh;
+    background-color: red;
+    
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) ,url('./images/sobrenosotrosimg.jpg') ;
+    background-position: center;
+    background-size: cover;
+}
+.titulo-nosotros{
+    width: 30%;
+    height: 30%;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+ 
+    align-items: center;
+    font-size: 2rem;
+}
+.titulo-nosotros h2{
+    margin-left: 1rem;
+    font-weight: bold;
+    color: #412009;
+}
+.first-text{
+    width: 70vw;
+    height:40%;
+    font-size: 1.5rem;
+    overflow-y: hidden;
+    margin-top: 2rem;
+    color: #412009;
+}
+.second-part{
+    width: 70vw;
+    height: 80%;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    font-size: 1.5rem;
+    color: #412009;
+}
+.servicios{
+    width: 100vw;
+    height: 100vh;
+    background-color: #EBD481;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicios h2{
+    font-size: 4rem;
+    color: #412009;
+}
+.service-content{
+    width: 100%;
+    margin-top: 2rem;
+    height: 90%;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: 0.33fr 0.33fr 0.33fr ;
+}
+
+.line-bee{
+    width: 300px;
+    height: 3px;
+    background-color: #412009;
+
+}
+.part-new{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.part-new h4{
+    font-size: 2rem;
+  
+}
+.part-new p {
+
+    margin-top: 1rem;
+}
+.two{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+}
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-s{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+.organizacion img{
+    width: 25%;
+}
+.organizacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.section-s img{
+    width: 20%;
+}
+.app{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.disponibles{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    overflow-y: hidden;
+   
+}
+.concept{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    text-align: justify;
+    width: 80vw;
+    overflow-y: hidden;
+}
+.concept h2{
+    overflow-y: hidden;
+}
+.concept p{
+    overflow-y: hidden;
+}
+.line-app{
+    width: 35%;
+    height: 4px;
+    background-color: #412009;
+    margin: 0.5rem;
+}
+.ios, .android{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EBD481;
+    border-radius: 2rem;
+    box-shadow: 8px 8px #D4A304;
+}
+.ios img,.android img{
+    width: 50%;
+    height: 65%;
+}
+.ios h3,.android h3{
+    margin-top: 1rem;
+    overflow-y: hidden;
+    font-size:3rem;
+    font-weight: bold;
+}
+.app h2{
+    font-size: 4rem;
+    color: #412009;
+}
+.disponibles button{
+    background-color: #412009;
+    color: white;
+    width: 20%;
+    height: 5%;
+    border-radius: 2rem;
+    border: none;
+    margin: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.soporte{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;   
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/annie-spratt-hCb3lIB8L8E-unsplash.jpg');
+
+    background-position:center;
+
+    background-size: cover;
+}
+.title-content{
+    
+    width: 100vw;
+    height: 30vh;
+  display: flex;
+  align-items: center;
+}
+.main-title{
+    background-color: white;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+.main-title h2{
+    font-size: 1.75rem;
+    margin: 1rem;
+    color: #412009;
+}
+.soporte-content{
+    display: grid;
+
+    width: 100vw;
+    height: 100%;
+    grid-template-columns: 0.5fr 0.5fr;
+}
+.mapa{
+    width: 70%;
+    height: 61%;
+}
+.mensaje,.content-mapa{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.mensaje h3,.content-mapa h3{
+    color: white;
+    height: 60px;
+    font-size: 2.5rem;
+}
+.mensaje button{
+    width: 200px;
+    height: 50px;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight:bold;
+    background-color: #EBD481;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.content-msg{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    margin: 1rem;
+
+}
+.content-msg label
+{
+    overflow-y: hidden;
+    height: 23px;
+    display: flex;
+    align-self: flex-start;
+    justify-self: left;
+    position: relative;
+    top: 5%;
+    left: 15%;
+    padding-left: 20px;
+    color: #412009;
+    outline: none;
+}
+
+.input-comment{
+    width: 70%;
+    height: 100%;
+   resize: none;
+   padding: 20px;
+   font-size: 1rem;
+   box-shadow: 10px 10px #EBD481;
+}
+.input-comment:focus{
+    border: none;
+    outline: none;
+}
+.input-comment::placeholder{
+    
+    color: white;
+}
+.contactanos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.direccion img{
+    width: 18px;
+    margin-right: 1rem;
+
+}
+.tel-correo{
+    display: flex;
+    
+}
+.tel-correo img{
+    width: 18px;
+    margin-right: 0.5rem;
+}
+.tel-correo p{
+    margin-right: 1rem;
+}
+.direccion,.telefono,.correo{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.footer{
+    width: 100vw;
+    height: 250px;
+ 
+    display: flex;
+    justify-content: center;
+}
+.content-footer{
+    width: 90vw;
+    height: 100%;
+
+}
+.top-footer{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    align-items: center;
+}
+.list-content{
+    display: flex;
+    justify-content: space-around;
+}
+.line-footer{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    opacity: 0.5;
+}
+.content-footer{
+    display: grid;
+    grid-template-rows: 0.6fr 0.15fr 0.15fr;
+}
+.bottom-footer{
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+}
+.redes{
+    display: flex;
+    justify-self: right;
+    align-items: center;
+}
+.redes img{
+    width: 30px;
+}
+.redes ul{
+    display: flex;
+}
+.redes li{
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.title-footer{
+    display: flex;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    align-items: center;
+    
+}
+.sub-line-footer{
+    width: 2px;
+    height: 90px;
+    background-color: black;
+    opacity: 0.5;
+    margin-left: 1.5rem;
+}
+@media (max-width:1700px){
+    .text-title{
+        font-size: 3rem;
+    }
+    .descripcion-slogan h2{
+        font-size: 2.5rem;
+    }
+    .descripcion-slogan h3{
+        font-size: 1.5rem;
+    }
+    .descripcion-slogan b{
+        font-size: 1.5rem;
+    }
+    .searching input{
+        width: 82%;
+    }
+    .searching{
+        width: 100% !important;
+    }
+    .logo{
+        width: 120px;
+    }
+    .logo-cont img{
+        width: 18rem;
+    }
+    .content-nosotros h2{
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+
+        height: 160px;
+    
+    }
+    .content-nosotros p{
+        font-size: 1.3rem;
+        margin-top: 2rem;
+  
+    }
+    .content-parrafo{
+        height: 100%;
+    }
+    .line{
+        margin-left: 1rem;
+        height: 8px;
+        width: 45vw;
+    }
+    .titulo-nosotros h2{
+        font-size: 1.75rem;
+    }
+   
+    .first-text p{
+        font-size: 1.05rem;
+    }
+    .part-new p{
+        font-size: 1.05rem;
+    }
+    .second-part img{
+        width: 200px;
+    }
+    .labeling li{
+        font-size: 1rem;
+        margin: 1rem;
+    }
+    .app h2{
+        font-size: 3rem;
+ 
+    }
+    .ios, .android{
+        height: 95%;
+    }
+    .ios img,.android img{
+        width: 45%;
+    }
+    .ios h3,.android h3{
+       font-size: 1.5rem;
+    }
+    .disponibles button{
+        height: 9%;
+        width: 25%;
+    }
+    .content-msg label{
+        top: 10%;
+    }
+}
